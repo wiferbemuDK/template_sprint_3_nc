@@ -1,6 +1,6 @@
 import os
 from . import dbc
-
+from app.__init__ import create_app
 from flask import Flask
 
 def create_app(test_config=None):
