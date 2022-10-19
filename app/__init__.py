@@ -1,6 +1,6 @@
 import os
 from . import dbc
-from app.__init__ import create_app
+
 from flask import Flask
 
 def create_app(test_config=None):
@@ -13,7 +13,6 @@ def create_app(test_config=None):
 
     if test_config is None:
         # Load the instance config, if it exists, when not testing
-        from app.__init__ import create_app
         app.config.from_pyfile('config.py', silent=True)
     else:
         # Load the test config if passed in
