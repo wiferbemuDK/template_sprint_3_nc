@@ -2,7 +2,7 @@ import functools
 import random
 import flask
 from . import utils
-
+from app.__init__ import create_app
 from email.message import EmailMessage
 import smtplib
 
